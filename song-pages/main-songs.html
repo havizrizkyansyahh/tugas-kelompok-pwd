@@ -4,96 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Songs</title>
-    <style>
-        tr:nth-child(even) {background-color: #cfcece;}
-    </style>
 </head>
+<font face="helvetica" size="2">
 <body>
-    <font face="helvetica" size="3">
-        <h3 style="text-align: center;">Songs</h3>
-    </font>
+    <h3 style="text-align: center;">Songs</h3>
     <hr>
-    <font face="sans-serif" size="1px">
-        <div>
-            <table style="width: 95%; text-align: left; margin-left: 50px;">
-                <tr>
-                    <th style="width: 27%;">Name</th>
-                    <th style="width: 28%;">| Artist</th>
-                    <th style="width: 10%;">| Album</th>
-                    <th style="width: 30%;">| Play</th>
-                </tr>
-            </table>
-            </div>
-            <hr>
-            <div style="display: flex; flex-direction: row;">
-                <table style="width: 100%; text-align: left; border-collapse: collapse;">
-                    <tr>
-                        <td style="width: 5%; padding-left: 50px;">
-                            <img src="../assets/album_covers/dewais.png" alt="" style="width: 40px;">
-                        </td>
-                        <td style="width: 25%;">Dewi</td>
-                        <td style="width: 30%;">Dewa - 19</td>
-                        <td style="width: 10%;">Kerajaan Cinta</td>
-                        <td style="width: 30%;"> 
-                            <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/Dewi.mp3" type="audio/mp3">
-                            </audio>
-                    </td>
-                </tr>
-                    <tr>
-                        <td style="width: 5%; padding-left: 50px;">
-                            <img src="../assets/album_covers/bernadya.png" alt="" style="width: 40px;">
-                        </td>
-                        <td style="width: 25%;">Terlintas</td>
-                        <td style="width: 30%;">Bernadya</td>
-                        <td style="width: 10%;">Terlintas</td>
-                        <td style="width: 30%;"> 
-                            <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/Terlintas.mp3" type="audio/mp3">
-                            </audio>
-                    </td>
-                </tr>
-                    <tr>
-                        <td style="width: 5%; padding-left: 50px;">
-                            <img src="../assets/album_covers/dewais.png" alt="" style="width: 40px;">
-                        </td>
-                        <td style="width: 25%;">Dewi</td>
-                        <td style="width: 30%;">Dewa - 19</td>
-                        <td style="width: 10%;">Kerajaan Cinta</td>
-                        <td style="width: 30%;"> 
-                            <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/Dewi.mp3" type="audio/mp3">
-                            </audio>
-                    </td>
-                </tr>
-                    <tr>
-                        <td style="width: 5%; padding-left: 50px;">
-                            <img src="../assets/album_covers/dewais.png" alt="" style="width: 40px;">
-                        </td>
-                        <td style="width: 25%;">Dewi</td>
-                        <td style="width: 30%;">Dewa - 19</td>
-                        <td style="width: 10%;">Kerajaan Cinta</td>
-                        <td style="width: 30%;"> 
-                            <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/Dewi.mp3" type="audio/mp3">
-                            </audio>
-                    </td>
-                </tr>
-                    <tr>
-                        <td style="width: 5%; padding-left: 50px;">
-                            <img src="../assets/album_covers/dewais.png" alt="" style="width: 40px;">
-                        </td>
-                        <td style="width: 25%;">Dewi</td>
-                        <td style="width: 30%;">Dewa - 19</td>
-                        <td style="width: 10%;">Kerajaan Cinta</td>
-                        <td style="width: 30%;"> 
-                            <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/Dewi.mp3" type="audio/mp3">
-                            </audio>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </font>
+    <table style="margin-left: 20px; border-collapse: collapse;" width="100%">
+        <tr>
+            <th style="border-right: 1px solid black; text-align: start;">Name</th>
+            <th style="border-right: 1px solid black; text-align: start;">Artist</th>
+            <th style="border-right: 1px solid black; text-align: start;">Album</th>
+            <th style="text-align: start;">Song</th>
+        </tr>
+        <tr style="background-color: #F4F9F9;">
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/Kerajaan Cinta.png" alt="">
+                    <p>Dewi</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Dewa 19</p></td>
+            <td><p style="width: 200px;">Kerajaan Cinta</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Dewi.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/bernadya.png" alt="">
+                    <p>Satu Bulan</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Bernadya</p></td>
+            <td><p style="width: 200px;">Terlintas</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Satu Bulan.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr style="background-color: #F4F9F9;">
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/night-visions.jpeg" alt="">
+                    <p>I'm On Top Of The World</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Imagine Dragons</p></td>
+            <td><p style="width: 200px;">Night Visions</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/On Top Of The World.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/bernadya.png" alt="">
+                    <p>Satu Bulan</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Bernadya</p></td>
+            <td><p style="width: 200px;">Terlintas</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Satu Bulan.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr style="background-color: #F4F9F9;">
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/Kerajaan Cinta.png" alt="">
+                    <p>Dewi</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Dewa 19</p></td>
+            <td><p style="width: 200px;">Kerajaan Cinta</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Dewi.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/bernadya.png" alt="">
+                    <p>Satu Bulan</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Bernadya</p></td>
+            <td><p style="width: 200px;">Terlintas</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Satu Bulan.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr style="background-color: #F4F9F9;">
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/Kerajaan Cinta.png" alt="">
+                    <p>Dewi</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Dewa 19</p></td>
+            <td><p style="width: 200px;">Kerajaan Cinta</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Dewi.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/bernadya.png" alt="">
+                    <p>Satu Bulan</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Bernadya</p></td>
+            <td><p style="width: 200px;">Terlintas</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Satu Bulan.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr style="background-color: #F4F9F9;">
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/Kerajaan Cinta.png" alt="">
+                    <p>Dewi</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Dewa 19</p></td>
+            <td><p style="width: 200px;">Kerajaan Cinta</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Dewi.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="display: flex; width: 400px; align-items: center;">
+                    <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/bernadya.png" alt="">
+                    <p>Satu Bulan</p>
+                </div>
+            </td>
+            <td><p style="width: 200px;">Bernadya</p></td>
+            <td><p style="width: 200px;">Terlintas</p></td>
+            <td>
+                <audio controls loop style="height: 30px;">
+                    <source src="../songs/albums/etc/Satu Bulan.mp3">
+                </audio>
+            </td>
+        </tr>
+    </table>
 </body>
+</font>
 </html>

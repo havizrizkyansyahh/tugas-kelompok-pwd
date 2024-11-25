@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* START SIDEBAR */
+.sidebar{
+    flex: 1;
+    border-right: 1px solid lightgray;
+    padding-left: 20px;
+}
+
+.sidebar-library-list h5{
+    margin-bottom: 7px;
+    font-size: 0.9rem;
+}
+
+.sidebar-list{
+    margin-bottom: 10px;
+}
+
+.sidebar-search-container{
+    margin-top: 20px;
+    position: relative;
+}
+
+.sidebar-search-icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 8px;
+    top: 18%;
+}
+
+.sidebar-search-container input{
+    padding: 5px 10px 5px 30px;
+    border-radius: 3px;
+    border: 1px solid #7695FF;
+}
+
+.sidebar-search-container input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #7695FF;
+}
+/* END SIDEBAR */
+
+/* START NAVBAR */
+.navbar{
+    border-bottom: 1px solid lightgray;
+    display: flex; 
+    padding: 0px 30px 0px 30px;
+    background-color: #D4EBF8;
+    height: 50px;
+}
+
+.song-player-container{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.song-player-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.song-player-buttons button {
+    border: none;
+    background-color: #D4EBF8;
+    cursor: pointer;
+}
+
+.song-player-buttons button img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.song-info-container{
+    display: flex;
+    width: 40%;
+}
+
+.song-info{
+    flex: 1;
+    text-align: center;
+    background-color: #F4F6FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-title{
+    font-weight: bold;
+}
+
+.song-info p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.song-info-container img{
+    width: 45px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.song-volume{
+    display: flex;
+    align-items: center;
+}
+
+.song-volume img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+}
+
+.user-info-container{
+    display: flex;
+    align-items: center;
+}
+
+.login-button{
+    background-color: #7695FF; 
+    border: none; 
+    border-radius: 7px; 
+    padding: 10px; 
+    font-size: 14px;
+}
+/* END NAVBAR */
+
+/* START MAIN */
+.main-container{
+    flex: 5;
+}
+
+.main{
+    padding: 0px 30px 0px 30px;
+}
+
+.main-content-title{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+/* END MAIN */
+
+
+/* START REUSABLE STYLE */
+.logo-link{
+    text-decoration: none;
+}
+
+.default-link{
+    text-decoration: none; 
+    color: black;
+}
+
+.img-text-component{
+    display: flex; 
+    align-items: center;
+}
+
+.img-text-component img{
+    width: 25px;
+    margin: 0px 10px 0px 10px;
+}
+
+.primary-text-color{
+    color: #7695FF;
+}
+
+.img-text-component .logo{
+    width: 40px;
+    margin-right: 0;
+}
+
+.ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+/* END REUSABLE STYLE */
+
+
+
+
+
+
+

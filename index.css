@@ -8,9 +8,11 @@ body {
 
 /* START SIDEBAR */
 .sidebar{
-    flex: 1;
     border-right: 1px solid lightgray;
-    padding-left: 20px;
+    padding: 0 20px 0 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .sidebar-library-list h5{
@@ -54,6 +56,10 @@ body {
     padding: 0px 30px 0px 30px;
     background-color: #D4EBF8;
     height: 50px;
+    margin-left: 245px;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 .song-player-container{
@@ -136,9 +142,11 @@ body {
 /* START MAIN */
 .main-container{
     flex: 5;
+    margin-left: 245px;
 }
 
 .main{
+    margin-top: 60px;
     padding: 0px 30px 0px 30px;
 }
 

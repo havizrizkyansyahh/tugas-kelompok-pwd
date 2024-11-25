@@ -4,210 +4,328 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Night Visions</title>
+    <link rel="stylesheet" href="../index.css">
 </head>
 <body>
-    <font face="helvetica" size="2">
-        <div style="display: flex; justify-content: center; margin-top: 30px;">
-            <div style="margin-right: 30px; margin-left: 30px;">
-                <img width="270px" style="border-radius: 10px;" src="https://i.scdn.co/image/ab67616d0000b27381eeace38068e9444cb28a3e" alt="">
+    <!-- START SIDEBAR -->
+    <div class="sidebar">
+        <a href="../index.html" target="_top" class="logo-link">
+            <div class="img-text-component">
+                <img src="../assets/icons8-music-50.png" alt="Musicify logo" class="logo">
+                <h2 class="primary-text-color">Musicify</h2>
             </div>
-            <div style="display: flex; flex-direction: column; justify-content: center;">
-                <h1 style="margin: 0;">Night Visions</h1>
-                <h2 style="color: #7695FF; margin: 0 0 5px 0;">Imagine Dragons</h2>
-                <p style="font-size: 11px; margin: 0; color: #758694;"><b>ALTERNATIVE - 2012</b></p>
-                <div style="width: 70%;">
-                    <p style="font-size: 12px; color: #758694;">
-                        <i>
-                        “This is it, the apocalypse,” Imagine Dragons’ frontman Dan Reynolds boldly declares on “Radioactive”, 
-                        the thunderous opening track of the Las Vegas quartet’s monstrous 2012 debut album. “Welcome to the new age,” 
-                        he continues with an ominous snarl, as if challenging anyone to suggest otherwise. The track pushes on like a gladiator's
-                        call to arms, punctuated with earth-shattering bass. It’s an all-or-nothing stadium rouser that introduces Imagine 
-                        Dragons as a band ready to take on the world—and boy, would it. 
-                        </i>
-                    </p>
+        </a>
+        <div class="sidebar-search-container">
+            <img src="https://img.icons8.com/ios/50/search--v1.png" alt="" class="sidebar-search-icon">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="sidebar-library-list">
+            <h5>Library</h5>
+            <ul class="ul">
+                <div class="img-text-component sidebar-list" >
+                    <img src="../assets/artist_icon.png" alt="microphone--v1"/>
+                    <li>
+                        <a href="../pages/index-artists.html" target="_top" class="default-link">Artists</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="../assets/albums_icon.png" ></img>
+                    <li>
+                        <a href="../pages/index-albums.html" target="_top" href="" class="default-link">Albums</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="../assets/music_icon.png" ></img>
+                    <li>
+                        <a href="../pages/index-songs.html" target="_top" class="default-link">Songs</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="sidebar-library-list">
+            <h5>Playlists</h5>
+            <ul class="ul">
+                <div class="img-text-component sidebar-list" >
+                    <img src="../assets/all_playlist_icon.png"></img>
+                    <li>
+                        <a href="../pages/index-allplaylist.html" target="_top" class="default-link" >All Playlists</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="../assets/favourite_icon.png"></img>
+                    <li>
+                        <a href="../pages/index-favourite-songs.html" target="_top" class="default-link">Favourite Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="../assets/icons8-rock-music-50.png"></img>
+                    <li>
+                        <a href="../pages/index-rock-songs.html" target="_top" class="default-link">Rock Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="../assets/list_music_icon.png"></img>
+                    <li>
+                        <a href="../pages/index-pop-songs.html" target="_top" class="default-link">Pop Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="../assets/icons8-person-60.png "></img>
+                    <li>
+                        <a href="../pages/ourplaylist.html" target="_top" class="default-link">Our Playlist</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- START MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- START NAVBAR -->
+        <div class="navbar">
+            <div class="song-player-container">
+                <div class="song-player-buttons">
+                    <button>
+                        <img src="../assets/rewind-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="../assets/play-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="../assets/fast-forward-icon.png" alt="">
+                    </button>
+                </div>
+
+                <div class="song-info-container">
+                    <img src="../assets/album_covers/blink-182.jpeg" alt="">
+                    <div class="song-info">
+                        <p class="song-title">Judul Lagu</p>
+                        <p>Nama Artist - Nama Album</p>
+                    </div>
+                </div>
+                    
+                <div class="song-volume">
+                    <img src="../assets/song-volume-icon.png" alt="">
+                    <p>------------</p>
                 </div>
             </div>
+
+            <div class="user-info-container">
+                <a href="./pages/index-form-login.html" target="_top">
+                    <button type="button" value="Login" class="login-button">
+                        Login
+                    </button>
+                </a>
+            </div>
         </div>
-        <div style="margin: 50px 30px 0 30px;">
-            <table width="100%" style="border-collapse: collapse;">
-                <tr style="background-color: #F4F9F9;">
-                    <td style="padding-left: 20px;">1</td>
-                    <td>Radioactive</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="/songs/albums/etc/radioactive.mp3" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>3:06</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 20px;">2</td>
-                    <td>Tiptoe</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/Tiptoe.mp3" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>3:14</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr style="background-color: #F4F9F9;">
-                    <td style="padding-left: 20px;">3</td>
-                    <td>It's Time</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/It's Time.mp3" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>4:00</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 20px;">4</td>
-                    <td>Demons</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/Demons.mp3" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>2:57</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr style="background-color: #F4F9F9;">
-                    <td style="padding-left: 20px;">5</td>
-                    <td>On Top Of The World</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="../songs/albums/etc/On Top Of The World.mp3" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>3:12</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 20px;">6</td>
-                    <td>Amsterdam</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>4:01</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr style="background-color: #F4F9F9;">
-                    <td style="padding-left: 20px;">7</td>
-                    <td>Hear Me</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>3:55</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 20px;">8</td>
-                    <td>Every Night</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>3:37</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr style="background-color: #F4F9F9;">
-                    <td style="padding-left: 20px;">9</td>
-                    <td>Bleeding Out</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>3:43</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 20px;">10</td>
-                    <td>Underdog</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>3:29</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-                <tr style="background-color: #F4F9F9;">
-                    <td style="padding-left: 20px;">11</td>
-                    <td>Nothing Left To Say / Rocks (Medley)</td>
-                    <td>
-                        <audio controls loop style="height: 30px;">
-                            <source src="" type="audio/mp3">
-                        </audio>
-                    </td>
-                    <td>8:59</td>
-                    <td>
-                        <img width="20px" src="../assets/star_icon.png" alt="">
-                    </td>
-                    <td>
-                        <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                    </td>
-                </tr>
-            </table>
+        <!-- END NAVBAR -->
+    
+        <!-- START MAIN -->
+        <div class="main">
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div style="margin-right: 30px; margin-left: 30px;">
+                    <img width="270px" style="border-radius: 10px;" src="https://i.scdn.co/image/ab67616d0000b27381eeace38068e9444cb28a3e" alt="">
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <h1 style="margin: 0;">Night Visions</h1>
+                    <h2 style="color: #7695FF; margin: 0 0 5px 0;">Imagine Dragons</h2>
+                    <p style="font-size: 11px; margin: 0; color: #758694;"><b>ALTERNATIVE - 2012</b></p>
+                    <div style="width: 70%;">
+                        <p style="font-size: 12px; color: #758694;">
+                            <i>
+                            “This is it, the apocalypse,” Imagine Dragons’ frontman Dan Reynolds boldly declares on “Radioactive”, 
+                            the thunderous opening track of the Las Vegas quartet’s monstrous 2012 debut album. “Welcome to the new age,” 
+                            he continues with an ominous snarl, as if challenging anyone to suggest otherwise. The track pushes on like a gladiator's
+                            call to arms, punctuated with earth-shattering bass. It’s an all-or-nothing stadium rouser that introduces Imagine 
+                            Dragons as a band ready to take on the world—and boy, would it. 
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 50px 30px 0 30px;">
+                <table width="100%" style="border-collapse: collapse;">
+                    <tr style="background-color: #F4F9F9;">
+                        <td style="padding-left: 20px;">1</td>
+                        <td>Radioactive</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="/songs/albums/etc/radioactive.mp3" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>3:06</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">2</td>
+                        <td>Tiptoe</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="../songs/albums/etc/Tiptoe.mp3" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>3:14</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr style="background-color: #F4F9F9;">
+                        <td style="padding-left: 20px;">3</td>
+                        <td>It's Time</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="../songs/albums/etc/It's Time.mp3" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>4:00</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">4</td>
+                        <td>Demons</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="../songs/albums/etc/Demons.mp3" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>2:57</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr style="background-color: #F4F9F9;">
+                        <td style="padding-left: 20px;">5</td>
+                        <td>On Top Of The World</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="../songs/albums/etc/On Top Of The World.mp3" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>3:12</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">6</td>
+                        <td>Amsterdam</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>4:01</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr style="background-color: #F4F9F9;">
+                        <td style="padding-left: 20px;">7</td>
+                        <td>Hear Me</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>3:55</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">8</td>
+                        <td>Every Night</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>3:37</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr style="background-color: #F4F9F9;">
+                        <td style="padding-left: 20px;">9</td>
+                        <td>Bleeding Out</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>3:43</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">10</td>
+                        <td>Underdog</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="" type="audio/mp3">
+                            </audio>
+                        </td>
+                        <td>3:29</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr style="background-color: #F4F9F9;">
+                        <td style="padding-left: 20px;">11</td>
+                        <td>Nothing Left To Say / Rocks (Medley)</td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
+                                <source src="" type="audio/mp3">
+                            </audio>
+                        </td> 
+                        <td>8:59</td>
+                        <td>
+                            <img width="20px" src="../assets/star_icon.png" alt="">
+                        </td>
+                        <td>
+                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </font>
+        <!-- END MAIN -->
+    </div>
 </body>
 </html>

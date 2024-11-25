@@ -6,16 +6,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musicify</title>
     <link rel="icon" href="../assets/icons8-music-50.png">
-    
+    <link rel="stylesheet" href="../index.css">
 </head>
 
-<frameset cols="17%, 83%">
-    <frame src="../sidebar.html">
-    <frameset rows="8%, 90%">
-        <frame src="../navbar.html">
-        <frame src="../album-pages/main-album.html  ">
-    </frameset>
+<body>
+    <!-- START SIDEBAR -->
+    <div class="sidebar">
+        <a href="./index.html" target="_top" class="logo-link">
+            <div class="img-text-component">
+                <img src="./assets/icons8-music-50.png" alt="Musicify logo" class="logo">
+                <h2 class="primary-text-color">Musicify</h2>
+            </div>
+        </a>
+        <div class="sidebar-search-container">
+            <img src="https://img.icons8.com/ios/50/search--v1.png" alt="" class="sidebar-search-icon">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="sidebar-library-list">
+            <h5>Library</h5>
+            <ul class="ul">
+                <div class="img-text-component sidebar-list" >
+                    <img src="./assets/artist_icon.png" alt="microphone--v1"/>
+                    <li>
+                        <a href="./pages/index-artists.html" target="_top" class="default-link">Artists</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="./assets/albums_icon.png" ></img>
+                    <li>
+                        <a href="./pages/index-albums.html" target="_top" href="" class="default-link">Albums</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="./assets/music_icon.png" ></img>
+                    <li>
+                        <a href="./pages/index-songs.html" target="_top" class="default-link">Songs</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="sidebar-library-list">
+            <h5>Playlists</h5>
+            <ul class="ul">
+                <div class="img-text-component sidebar-list" >
+                    <img src="./assets/all_playlist_icon.png"></img>
+                    <li>
+                        <a href="./pages/index-allplaylist.html" target="_top" class="default-link" >All Playlists</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="./assets/favourite_icon.png"></img>
+                    <li>
+                        <a href="./pages/index-favourite-songs.html" target="_top" class="default-link">Favourite Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="./assets/icons8-rock-music-50.png"></img>
+                    <li>
+                        <a href="./pages/index-rock-songs.html" target="_top" class="default-link">Rock Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="./assets/list_music_icon.png"></img>
+                    <li>
+                        <a href="./pages/index-pop-songs.html" target="_top" class="default-link">Pop Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list" >
+                    <img src="./assets/icons8-person-60.png "></img>
+                    <li>
+                        <a href="./pages/ourplaylist.html" target="_top" class="default-link">Our Playlist</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
 
-</frameset>
+    <!-- START MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- START NAVBAR -->
+        <div class="navbar">
+            <div class="song-player-container">
+                <div class="song-player-buttons">
+                    <button>
+                        <img src="./assets/rewind-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="./assets/play-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="./assets/fast-forward-icon.png" alt="">
+                    </button>
+                </div>
 
+                <div class="song-info-container">
+                    <img src="./assets/album_covers/blink-182.jpeg" alt="">
+                    <div class="song-info">
+                        <p class="song-title">Judul Lagu</p>
+                        <p>Nama Artist - Nama Album</p>
+                    </div>
+                </div>
+                    
+                <div class="song-volume">
+                    <img src="./assets/song-volume-icon.png" alt="">
+                    <p>------------</p>
+                </div>
+            </div>
+
+            <div class="user-info-container">
+                <a href="./pages/index-form-login.html" target="_top">
+                    <button type="button" value="Login" class="login-button">
+                        Login
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- END NAVBAR -->
+
+        <!-- START MAIN -->
+        <div class="main">
+            <h3 style="text-align: center; margin-bottom: 0;">Albums</h3>
+            <hr>
+            <div style="padding-left: 15px;">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="../album-pages/kerajaancinta.html" style="text-decoration: none;">
+                                <div style="margin: 20px; height: 260px; max-width: 200px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/Kerajaan Cinta.png" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Kerajaan Cinta</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Dewa 19</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>POP - 2023</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../album-pages/night-visions.html" style="text-decoration: none;">
+                                <div style="margin: 20px; height: 260px; max-width: 200px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/night-visions.jpeg" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Night Visions</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Imagine Dragons</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>ALTERNATIVE - 2012</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../album-pages/terlintas.html" style="text-decoration: none;">
+                                <div style="margin: 20px; height: 260px; max-width: 200px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/terlintas.png" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Sialnya, Hidup Harus Tetap Berjalan</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Bernadya</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>POP - 2023</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" style="text-decoration: none;">
+                                <div style="margin: 20px; height: 260px; max-width: 200px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/aespa.jpeg" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">SYNK: PARALLEL LINE</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Aespa</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>KPOP - 2024</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" style="text-decoration: none;">
+                                <div style="margin: 20px; height: 260px; max-width: 200px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/svt.png" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Seventeenth Heaven</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Seventeen</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>POP - 2023</b></p>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="../album-pages/ready-to-be.html" style="text-decoration: none;">
+                                <div style="margin: 20px; height: 260px; max-width: 200px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/ready tobe.jfif" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Ready To Be</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Twice</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>KPOP - 2023</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" style="text-decoration: none;">
+                                <div style="margin: 20px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/mahal.jpg" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Fabula</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Mahalini</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>POP - 2023</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" style="text-decoration: none;">
+                                <div style="margin: 20px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/james.jpg" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Back From The Edge</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Crystal Castles</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>POP - 2016</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" style="text-decoration: none;">
+                                <div style="margin: 20px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/tulus.png" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Monokrom</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Tulus</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>POP - 2016</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" style="text-decoration: none;">
+                                <div style="margin: 20px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/rv.jpeg" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Bloom</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Red Velvet</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>JPop - 2022</b></p>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" style="text-decoration: none;">
+                                <div style="margin: 20px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/justin.png" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Purpose</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Justin Bieber</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>POP - 2015</b></p>
+                                </div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" style="text-decoration: none;">
+                                <div style="margin: 20px;">
+                                    <img width="200px" style="border-radius: 10px;" src="../assets/album_covers/queenkiller.jpeg" alt="">
+                                    <h2 style="margin: 0; font-size: 16px; color: black;">Queen Killer</h2>
+                                    <h3 style="margin: 0 0 5px 0; color: #7695FF; font-size: 14px;">Queen</h3>
+                                    <p style="margin: 0; font-size: 11px; color: #BBBBBB;"><b>POP - 1974</b></p>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- END MAIN -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+</body>
 </html>

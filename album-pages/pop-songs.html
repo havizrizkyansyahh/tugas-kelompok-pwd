@@ -1,15 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop Songs</title>
     <link rel="icon" href="./assets/icons8-music-50.png">
-
+    <link rel="stylesheet" href="../index.css">
 </head>
+
 <body body style="margin: 0;">
-    <font face="helvetica" size="2">
-        <div style="display: flex;  margin-top: 30px;">
+    <!-- START SIDEBAR -->
+    <div class="sidebar">
+        <a href="../index.html" target="_top" class="logo-link">
+            <div class="img-text-component">
+                <img src="../assets/icons8-music-50.png" alt="Musicify logo" class="logo">
+                <h2 class="primary-text-color">Musicify</h2>
+            </div>
+        </a>
+        <div class="sidebar-search-container">
+            <img src="https://img.icons8.com/ios/50/search--v1.png" alt="" class="sidebar-search-icon">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="sidebar-library-list">
+            <h5>Library</h5>
+            <ul class="ul">
+                <div class="img-text-component sidebar-list">
+                    <img src="../assets/artist_icon.png" alt="microphone--v1" />
+                    <li>
+                        <a href="../pages/index-artists.html" target="_top" class="default-link">Artists</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list">
+                    <img src="../assets/albums_icon.png"></img>
+                    <li>
+                        <a href="../pages/index-albums.html" target="_top" href="" class="default-link">Albums</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list">
+                    <img src="../assets/music_icon.png"></img>
+                    <li>
+                        <a href="../pages/index-songs.html" target="_top" class="default-link">Songs</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="sidebar-library-list">
+            <h5>Playlists</h5>
+            <ul class="ul">
+                <div class="img-text-component sidebar-list">
+                    <img src="../assets/all_playlist_icon.png"></img>
+                    <li>
+                        <a href="../pages/index-allplaylist.html" target="_top" class="default-link">All Playlists</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list">
+                    <img src="../assets/favourite_icon.png"></img>
+                    <li>
+                        <a href="../pages/index-favourite-songs.html" target="_top" class="default-link">Favourite
+                            Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list">
+                    <img src="../assets/icons8-rock-music-50.png"></img>
+                    <li>
+                        <a href="../pages/index-rock-songs.html" target="_top" class="default-link">Rock Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list">
+                    <img src="../assets/list_music_icon.png"></img>
+                    <li>
+                        <a href="../pages/index-pop-songs.html" target="_top" class="default-link">Pop Songs</a>
+                    </li>
+                </div>
+                <div class="img-text-component sidebar-list">
+                    <img src="../assets/icons8-person-60.png "></img>
+                    <li>
+                        <a href="../pages/ourplaylist.html" target="_top" class="default-link">Our Playlist</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- START MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- START NAVBAR -->
+        <div class="navbar">
+            <div class="song-player-container">
+                <div class="song-player-buttons">
+                    <button>
+                        <img src="../assets/rewind-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="../assets/play-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="../assets/fast-forward-icon.png" alt="">
+                    </button>
+                </div>
+
+                <div class="song-info-container">
+                    <img src="../assets/album_covers/blink-182.jpeg" alt="">
+                    <div class="song-info">
+                        <p class="song-title">Judul Lagu</p>
+                        <p>Nama Artist - Nama Album</p>
+                    </div>
+                </div>
+
+                <div class="song-volume">
+                    <img src="../assets/song-volume-icon.png" alt="">
+                    <p>------------</p>
+                </div>
+            </div>
+
+            <div class="user-info-container">
+                <a href="./pages/index-form-login.html" target="_top">
+                    <button type="button" value="Login" class="login-button">
+                        Login
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- END NAVBAR -->
+
+        <!-- START MAIN -->
+        <div class="main">
+            <div style="display: flex;  margin-top: 30px;">
                 <div style="margin-right: 30px; margin-left: 30px;">
                     <img width="270px" style="border-radius: 10px;" src="../assets/album_covers/best pop.jfif" alt="">
                 </div>
@@ -19,19 +137,25 @@
                     <div style="width: 70%;">
                         <p style="font-size: 12px; margin: 0; color: #758694;">
                             <i>
-                                A pop songs playlist is a vibrant collection of catchy, mainstream music tracks designed to appeal to a wide 
-                                audience. These playlists typically feature melodic, well-produced songs with memorable hooks and choruses that
-                                stick in your head. You'll find a mix of current chart-toppers and recent releases from both established pop 
-                                stars and emerging artists. The playlist embraces diversity, showcasing solo performers, bands, and exciting 
-                                collaborations. It offers a balanced blend of upbeat dance tracks that get you moving and slower ballads for
-                                more reflective moments. Pop music often incorporates elements from other genres like R&B, electronic, 
+                                A pop songs playlist is a vibrant collection of catchy, mainstream music tracks designed
+                                to appeal to a wide
+                                audience. These playlists typically feature melodic, well-produced songs with memorable
+                                hooks and choruses that
+                                stick in your head. You'll find a mix of current chart-toppers and recent releases from
+                                both established pop
+                                stars and emerging artists. The playlist embraces diversity, showcasing solo performers,
+                                bands, and exciting
+                                collaborations. It offers a balanced blend of upbeat dance tracks that get you moving
+                                and slower ballads for
+                                more reflective moments. Pop music often incorporates elements from other genres like
+                                R&B, electronic,
                                 or hip-hop, resulting in a fresh, contemporary sound.
                             </i>
-                        </p> 
+                        </p>
                     </div>
                 </div>
             </div>
-            <div style="margin-top: 20px;" >
+            <div style="margin-top: 20px;">
                 <table style="border-collapse: collapse;" width="100%">
                     <tr>
                         <th></th>
@@ -48,12 +172,17 @@
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/olny.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/olny.jfif" alt="">
                                 <p>Only</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Leehi</p></td>
-                        <td><p style="width: 200px;">4 Only</p></td>
+                        <td>
+                            <p style="width: 200px;">Leehi</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">4 Only</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/only-lyrics.mp3">
@@ -64,18 +193,23 @@
                         <td>
                             <div style="width: 12px; margin: 0 10px;">
                                 <div style="width: 12px;">
-                                    
+
                                 </div>
                             </div>
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/password.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/password.jfif" alt="">
                                 <p>Password 486</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Younha</p></td>
-                        <td><p style="width: 200px;">The Perfect Day</p></td>
+                        <td>
+                            <p style="width: 200px;">Younha</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">The Perfect Day</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/">
@@ -85,17 +219,22 @@
                     <tr style="background-color: #F4F9F9;">
                         <td>
                             <div style="width: 12px; margin: 0 10px;">
-                                
+
                             </div>
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/kidult.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/kidult.jfif" alt="">
                                 <p>Kidult</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Seventeen</p></td>
-                        <td><p style="width: 200px;">Jazz (Deluxe Edition)</p></td>
+                        <td>
+                            <p style="width: 200px;">Seventeen</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">Jazz (Deluxe Edition)</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/kidult.mp3">
@@ -106,18 +245,23 @@
                         <td>
                             <div style="width: 12px; margin: 0 10px;">
                                 <div style="width: 12px;">
-                                    
+
                                 </div>
                             </div>
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/maestro.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/maestro.jfif" alt="">
                                 <p>Maestro</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Seventeen</p></td>
-                        <td><p style="width: 200px;">17 is Right Here</p></td>
+                        <td>
+                            <p style="width: 200px;">Seventeen</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">17 is Right Here</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/seventeen maestro.mp3">
@@ -132,12 +276,17 @@
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/seberapa pantas.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/seberapa pantas.jfif" alt="">
                                 <p>Seberapa Pantas</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Sheila On 7</p></td>
-                        <td><p style="width: 200px;">07 Des</p></td>
+                        <td>
+                            <p style="width: 200px;">Sheila On 7</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">07 Des</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/seberapa.mp3">
@@ -148,18 +297,23 @@
                         <td>
                             <div style="width: 12px; margin: 0 10px;">
                                 <div style="width: 12px;">
-                                    
+
                                 </div>
                             </div>
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/sepenuh hati.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/sepenuh hati.jfif" alt="">
                                 <p>Sepenuh Hati</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Etridi</p></td>
-                        <td><p style="width: 200px;">Masa Sich</p></td>
+                        <td>
+                            <p style="width: 200px;">Etridi</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">Masa Sich</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/sepenuh.mp3">
@@ -174,12 +328,17 @@
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/mercy.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/mercy.jfif" alt="">
                                 <p>Mercy</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Shawn Mendes</p></td>
-                        <td><p style="width: 200px;">Iluminate</p></td>
+                        <td>
+                            <p style="width: 200px;">Shawn Mendes</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">Iluminate</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/">
@@ -190,18 +349,23 @@
                         <td>
                             <div style="width: 12px; margin: 0 10px;">
                                 <div style="width: 12px;">
-                                    
+
                                 </div>
                             </div>
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/dna.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/dna.jfif" alt="">
                                 <p>Dna</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">LANY</p></td>
-                        <td><p style="width: 200px;">Californication</p></td>
+                        <td>
+                            <p style="width: 200px;">LANY</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">Californication</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/">
@@ -211,17 +375,22 @@
                     <tr style="background-color: #F4F9F9;">
                         <td>
                             <div style="width: 12px; margin: 0 10px;">
-                                
+
                             </div>
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/one kiss.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/one kiss.jfif" alt="">
                                 <p>One Kiss</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Riize</p></td>
-                        <td><p style="width: 200px;">Riizing</p></td>
+                        <td>
+                            <p style="width: 200px;">Riize</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">Riizing</p>
+                        </td>
                         <td>
                             <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/">
@@ -232,26 +401,35 @@
                         <td>
                             <div style="width: 12px; margin: 0 10px;">
                                 <div style="width: 12px;">
-                                    
+
                                 </div>
                             </div>
                         </td>
                         <td>
                             <div style="display: flex; width: 400px; align-items: center;">
-                                <img width="50px" style="border-radius: 10px; margin-right: 10px;" src="../assets/album_covers/smoke.jfif" alt="">
+                                <img width="50px" style="border-radius: 10px; margin-right: 10px;"
+                                    src="../assets/album_covers/smoke.jfif" alt="">
                                 <p>Smoke</p>
                             </div>
                         </td>
-                        <td><p style="width: 200px;">Jaehyun</p></td>
-                        <td><p style="width: 200px;">J-The 1st</p></td>
                         <td>
-                            <audio controls loop style="height: 30px;"> 
+                            <p style="width: 200px;">Jaehyun</p>
+                        </td>
+                        <td>
+                            <p style="width: 200px;">J-The 1st</p>
+                        </td>
+                        <td>
+                            <audio controls loop style="height: 30px;">
                                 <source src="../songs/albums/etc/">
                             </audio>
                         </td>
                     </tr>
                 </table>
             </div>
-    </font> 
+        </div>
+        <!-- END MAIN -->
+    </div>
+    <!-- END MAIN CONTAINER -->
 </body>
+
 </html>

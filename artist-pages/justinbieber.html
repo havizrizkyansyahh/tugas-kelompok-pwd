@@ -3,78 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dewa 19</title>
+    <title>Justin Bieber</title>
+    <link rel="stylesheet" href="../index.css">
 </head>
-<font face="helvetica">
     <body style="margin: 0;">
-        <div style="
-            position: relative;
-            height: 490px;
-            overflow: hidden;
-        ">
-            <video height="100%" autoplay loop muted style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            ">
-                <source src="../assets/videos//banner_blackscrene.mp4" type="video/mp4">
-            </video>
+        <!-- START SIDEBAR -->
+        <div class="sidebar">
+            <a href="../index.html" target="_top" class="logo-link">
+                <div class="img-text-component">
+                    <img src="../assets/icons8-music-50.png" alt="Musicify logo" class="logo">
+                    <h2 class="primary-text-color">Musicify</h2>
+                </div>
+            </a>
+            <div class="sidebar-search-container">
+                <img src="https://img.icons8.com/ios/50/search--v1.png" alt="" class="sidebar-search-icon">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-library-list">
+                <h5>Library</h5>
+                <ul class="ul">
+                    <div class="img-text-component sidebar-list" >
+                        <img src="../assets/artist_icon.png" alt="microphone--v1"/>
+                        <li>
+                            <a href="../pages/index-artists.html" target="_top" class="default-link">Artists</a>
+                        </li>
+                    </div>
+                    <div class="img-text-component sidebar-list" >
+                        <img src="../assets/albums_icon.png" ></img>
+                        <li>
+                            <a href="../pages/index-albums.html" target="_top" href="" class="default-link">Albums</a>
+                        </li>
+                    </div>
+                    <div class="img-text-component sidebar-list" >
+                        <img src="../assets/music_icon.png" ></img>
+                        <li>
+                            <a href="../pages/index-songs.html" target="_top" class="default-link">Songs</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="sidebar-library-list">
+                <h5>Playlists</h5>
+                <ul class="ul">
+                    <div class="img-text-component sidebar-list" >
+                        <img src="../assets/all_playlist_icon.png"></img>
+                        <li>
+                            <a href="../pages/index-allplaylist.html" target="_top" class="default-link" >All Playlists</a>
+                        </li>
+                    </div>
+                    <div class="img-text-component sidebar-list" >
+                        <img src="../assets/favourite_icon.png"></img>
+                        <li>
+                            <a href="../pages/index-favourite-songs.html" target="_top" class="default-link">Favourite Songs</a>
+                        </li>
+                    </div>
+                    <div class="img-text-component sidebar-list" >
+                        <img src="../assets/icons8-rock-music-50.png"></img>
+                        <li>
+                            <a href="../pages/index-rock-songs.html" target="_top" class="default-link">Rock Songs</a>
+                        </li>
+                    </div>
+                    <div class="img-text-component sidebar-list" >
+                        <img src="../assets/list_music_icon.png"></img>
+                        <li>
+                            <a href="../pages/index-pop-songs.html" target="_top" class="default-link">Pop Songs</a>
+                        </li>
+                    </div>
+                    <div class="img-text-component sidebar-list" >
+                        <img src="../assets/icons8-person-60.png "></img>
+                        <li>
+                            <a href="../pages/ourplaylist.html" target="_top" class="default-link">Our Playlist</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div style="padding: 10px 30px 0 30px;">
-            <div style="display: flex; ">
-                <h1 style="margin-top: 0; flex: 1;">Justin Bieber</h1>
-                <div>
-                    <img style="padding: 0 3px 0 3px;" width="20px" src="../assets/star_icon.png" alt="">
-                    <img style="padding: 0 3px 0 3px;" width="20px" src="../assets/three_dots_icon.png" alt="">
+        <!-- END SIDEBAR -->
+
+        <!-- START MAIN CONTAINER -->
+        <div class="main-container">
+            <!-- START NAVBAR -->
+            <div class="navbar">
+                <div class="song-player-container">
+                    <div class="song-player-buttons">
+                        <button>
+                            <img src="../assets/rewind-icon.png" alt="">
+                        </button>
+                        <button>
+                            <img src="../assets/play-icon.png" alt="">
+                        </button>
+                        <button>
+                            <img src="../assets/fast-forward-icon.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="song-info-container">
+                        <img src="../assets/album_covers/blink-182.jpeg" alt="">
+                        <div class="song-info">
+                            <p class="song-title">Judul Lagu</p>
+                            <p>Nama Artist - Nama Album</p>
+                        </div>
+                    </div>
+                        
+                    <div class="song-volume">
+                        <img src="../assets/song-volume-icon.png" alt="">
+                        <p>------------</p>
+                    </div>
+                </div>
+
+                <div class="user-info-container">
+                    <a href="./pages/index-form-login.html" target="_top">
+                        <button type="button" value="Login" class="login-button">
+                            Login
+                        </button>
+                    </a>
                 </div>
             </div>
-            <div>
-                <h3>Top Songs</h3>
-                <table width="100%">
-                    <tr>
-                        <td>
-                            <img width="50px" src="../assets/album_covers/justice_jb.jpeg" alt="" style="border-radius: 6px;">
-                        </td>
-                        <td>Lonely.</td>
-                        <td>
-                            <audio controls loop style="height: 30px;">
-                                <source src="../songs/albums/etc/lonely-official-music-video.mp3" type="audio/mp3">
-                            </audio>
-                        </td>
-                        <td>Justin Bieber</td>
-                        <td>Lonely.</td>
-                        <td>4:23</td>
-                        <td>
-                            <img width="20px" src="../assets/star_icon.png" alt="">
-                        </td>
-                        <td>
-                            <img width="20px" src="../assets/three_dots_icon.png" alt="">
-                        </td>
-                    </tr>
-                </table>
-                <div>
-                    <h3>Albums</h3>
-                    <table>
-                        <tr>
-                            <td>
-                                <a href="" style="text-decoration: none;">
-                                    <div>
-                                        <img src="../assets/album_covers/justice_jb.jpeg" alt="" 
-                                        style="width: 200px; height: 200px; border-radius: 10px;">
-                                        <p style="margin-bottom: 0px; margin-top: 0px; color: black;">
-                                            <u>Justin Bieber</u>
-                                        </p>
-                                        <p style="margin-top: 0px; color: #758694;">2021</p>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
+            <!-- END NAVBAR -->
+
+            <!-- START MAIN -->
+            <div class="main-artist">
+                <div style="
+                    position: relative;
+                    height: 490px;
+                    overflow: hidden;
+                ">
+                    <video height="100%" autoplay loop muted style="
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    ">
+                        <source src="../assets/videos//banner_blackscrene.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="padding: 10px 30px 0 30px;">
+                    <div style="display: flex; ">
+                        <h1 style="margin-top: 0; flex: 1;">Justin Bieber</h1>
+                        <div>
+                            <img style="padding: 0 3px 0 3px;" width="20px" src="../assets/star_icon.png" alt="">
+                            <img style="padding: 0 3px 0 3px;" width="20px" src="../assets/three_dots_icon.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Top Songs</h3>
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <img width="50px" src="../assets/album_covers/justice_jb.jpeg" alt="" style="border-radius: 6px;">
+                                </td>
+                                <td>Lonely.</td>
+                                <td>
+                                    <audio controls loop style="height: 30px;">
+                                        <source src="../songs/albums/etc/lonely-official-music-video.mp3" type="audio/mp3">
+                                    </audio>
+                                </td>
+                                <td>Justin Bieber</td>
+                                <td>Lonely.</td>
+                                <td>4:23</td>
+                                <td>
+                                    <img width="20px" src="../assets/star_icon.png" alt="">
+                                </td>
+                                <td>
+                                    <img width="20px" src="../assets/three_dots_icon.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                        <div>
+                            <h3>Albums</h3>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="" style="text-decoration: none;">
+                                            <div>
+                                                <img src="../assets/album_covers/justice_jb.jpeg" alt="" 
+                                                style="width: 200px; height: 200px; border-radius: 10px;">
+                                                <p style="margin-bottom: 0px; margin-top: 0px; color: black;">
+                                                    <u>Justin Bieber</u>
+                                                </p>
+                                                <p style="margin-top: 0px; color: #758694;">2021</p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- END MAIN -->
         </div>
-        
+        <!-- END MAIN CONTAINER -->
     </body>
-</font>
 </html>

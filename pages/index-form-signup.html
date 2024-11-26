@@ -128,22 +128,13 @@
         <!-- START MAIN -->
         <div class="main-artist">
             <div style="display: flex;">
-                <div style="width: 40%;">
-                    <img src="../assets/other/guitar-for-form.jpg" alt="" style="width: 100%; height: 100%;">
-                </div>
+
                 <div style="width: 60%; display: flex; align-items: center;">
                     <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
                         <form action="">
-                            <p style="font-size: 14px;">
-                                Don't have an account?
-                                <a href="index-form-signup.html" style="color: #7695FF; text-decoration: none; ">
-                                    Register now
-                                </a>
-                            </p>
-                            <h2 style="text-align: center;">Hello Again!</h2>
-                            <p>Welcome back you've been missed!</p>
+                            <h2 style="text-align: center;">Register an account</h2>
                             <div style="display: flex; flex-direction: column;">
-                                <input type="email" placeholder="Enter your e-mail or username" style="
+                                <input type="email" placeholder="Your E-mail" style="
                                     margin-bottom: 20px;
                                     padding: 10px;
                                     border-radius: 6px;
@@ -155,14 +146,61 @@
                                     border-radius: 6px;
                                     border: 0.5px solid #7695FF;
                                 ">
+                                <input type="password" name="confirm_password" id="confirm_password"
+                                    placeholder="Confirm password" style="
+                                    margin-bottom: 20px;
+                                    padding: 10px;
+                                    border-radius: 6px;
+                                    border: 0.5px solid #7695FF;
+                                ">
+                                <input type="tex" name="username" id="username" placeholder="What should we call you?"
+                                    style="
+                                    margin-bottom: 20px;
+                                    padding: 10px;
+                                    border-radius: 6px;
+                                    border: 0.5px solid #7695FF;
+                                ">
+                                <textarea name="user_desc" id="user_desc" rows="5"
+                                    placeholder="Describe your account profile" style="
+                                    margin-bottom: 20px;
+                                    padding: 10px;
+                                    border-radius: 6px;
+                                    border: 0.5px solid #7695FF;
+                                "></textarea>
                             </div>
-                            <p style="text-align: end; margin: 0 0 30px 0;">
-                                <a href="" style="text-decoration: none; font-size: 14px; color: #7695FF;">
-                                    Recovery Password
-                                </a>
-                            </p>
+                            <div style="margin-bottom: 20px;">
+                                <label style="margin: 0 10px 0 0; font-size: 14px;">Date of birth</label>
+                                <input type="date">
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <label for="nationality" style="margin-right: 10px;">Nationality</label>
+                                <select name="nationality" id="nationality">
+                                    <option value="">-- Choose Your Nationality --</option>
+                                    <option value="indonesia">Indonesia </option>
+                                    <option value="malaysia">Malaysia</option>
+                                    <option value="usa">USA</option>
+                                    <option value="palestine">Palestine</option>
+                                </select>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <p>Choose your favorite genre:</p>
+                                <input type="checkbox" value="rock" name="rock" id="rock">
+                                <label for="rock">Rock</label>
+                                <input type="checkbox" value="pop" name="pop" id="pop">
+                                <label for="pop">Pop</label>
+                                <input type="checkbox" value="jazz" name="jazz" id="jazz">
+                                <label for="jazz">Jazz</label>
+                                <input type="checkbox" value="hiphop" name="hiphop" id="hiphop">
+                                <label for="hiphop">Hip-Hop/Rap</label>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label>
+                            </div>
                             <div style="margin-bottom: 40px;">
-                                <input type="submit" name="submit" id="submit" value="Sign In" style="
+                                <input type="submit" name="submit" id="submit" value="Sign Up" style="
                                     width: 100%; 
                                     padding: 12px 0 12px 0;
                                     border-radius: 6px;
@@ -170,15 +208,17 @@
                                     background-color: #7695FF;
                                 ">
                             </div>
-                            <p style="text-align: center; font-size: 14px;">Or continue with</p>
+                            <p style="text-align: center; font-size: 14px;">Or sign up with</p>
                             <div style="display: flex; justify-content: space-evenly; margin: 20px 0 40px 0;">
                                 <img width="40px" src="../assets/other/google_icon.png" alt="">
                                 <img width="40px" src="../assets/other/apple_icon.png" alt="">
                                 <img width="40px" src="../assets/other/facebook_icon.png" alt="">
                             </div>
-
                         </form>
                     </div>
+                </div>
+                <div style="width: 40%; ">
+                    <img width="100%" src="../assets/other/guitar-for-form.jpg" alt="">
                 </div>
             </div>
         </div>

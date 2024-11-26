@@ -1,4 +1,6 @@
-
+p{
+    font-size: 14px;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -160,6 +162,7 @@ body {
 .main-content-title{
     border-bottom: 1px solid lightgray;
     padding-bottom: 10px;
+    text-align: center;
 }
 /* END MAIN */
 

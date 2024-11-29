@@ -122,6 +122,7 @@ const albumCardContainer = document.getElementById("album-card-container");
 
 topAlbums.forEach((album) => {
     const albumLink = document.createElement("a");
+    albumLink.className = "default-link";
     albumLink.href = `${album.href_link}`;
 
     const albumCard = document.createElement("div");

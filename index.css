@@ -201,6 +201,72 @@ body {
     padding-left: 0;
     margin-top: 0;
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.song-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.song-card:hover .song-card-img,
+.song-card:hover p{
+    cursor: pointer;
+    filter: brightness(75%);
+    text-decoration: underline;
+}
+
+.song-card:hover .play-song-btn{
+    display: block;
+}
+
+.song-card .song-card-img{
+    width: 100%; 
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.song-card p{
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    color: #758694;
+}
+
+.play-song-btn{
+    position: absolute;
+    left: 4%;
+    bottom: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30px;
+    height: 30px; 
+    border: none;
+    border-radius: 100%;
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.play-song-btn:hover{
+    background-color: #7695FF;
+}
+
+.play-song-btn img{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
 /* END REUSABLE STYLE */
 
 
@@ -216,6 +282,17 @@ body {
 
     .navbar{
         margin: 0;
+    }
+
+    .play-song-btn{
+        bottom: 14%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .play-solid-btn img{
+        width: 40px;
+        height: 40px;
     }
 }
 

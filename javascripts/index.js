@@ -103,7 +103,7 @@ songs.forEach((song) => {
         <img class="song-card-img" src=${song.image} alt="" >
         <p>${song.title}</p>
         <p>${song.artist}</p>
-        <button class="play-song-btn" onClick=${playSong(song.song_dir)}>
+        <button class="play-song-btn">
             <img src="../assets/play-song-white.png">
         </button>
     `;

@@ -7,6 +7,7 @@
     <title>Musicify</title>
     <link rel="icon" href="../assets/icons8-music-50.png">
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../ourlist.css">
 </head>
 
 <body>
@@ -86,6 +87,12 @@
     <div class="main-container">
         <!-- START NAVBAR -->
         <div class="navbar">
+            <div class="hamburger-menu">
+                <button>
+                    <img src="../assets/hamburger-menu-icon.png" alt="">
+                </button>
+            </div>
+
             <div class="song-player-container">
                 <div class="song-player-buttons">
                     <button>
@@ -122,182 +129,52 @@
             </div>
         </div>
         <!-- END NAVBAR -->
-    
+
         <!-- START MAIN -->
         <div class="main">
-            <h3 style="text-align: center; margin-bottom: 0;">Our Playlists</h3>
-            <hr>
+            <h3 class="main-content-title">Our Playlists</h3>
             <div style="margin-bottom: 50px;">
-                <table>
-                    <tr>
-                        <td>
-                            <a href="../our-playlist/haviz-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px; height: 260px; max-width: 200px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../our-playlist/our-photos/haviz.jpg" alt="">
-                                    <h2 style="margin: 0; font-size: 16px; color: black;">Haviz Playlist</h2>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../our-playlist/apoy-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px; height: 260px; max-width: 200px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" src="../our-playlist/our-photos/poii.jpg" alt="">
-                                    <h2 style="margin: 0; font-size: 16px; color: black;">Apoy Playlist</h2>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../our-playlist/geizka-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px; height: 260px; max-width: 200px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px;" src="../our-playlist/our-photos/geizka.jpg" alt="">
-                                    <h2 style="margin: 0; font-size: 16px; color: black;">Geizka Playlist</h2>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../our-playlist/dila-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px; height: 260px; max-width: 200px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                    src="../our-playlist/our-photos/dila.jpg" alt="">
-                                    <h2 style="margin: 0; font-size: 16px; color: black;">Dila Playlist</h2>
-                                </div>
-                            </a>
-                            <td>
-                                <a href="../our-playlist/mine-playlist.html" style="text-decoration: none;">
-                                    <div style="margin: 20px; height: 260px; max-width: 200px;">
-                                        <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                            src="../our-playlist/our-photos/mine.jpg" alt="">
-                                        <h2 style="margin: 0; font-size: 16px; color: black;">Mine Playlist</h2>
-                                    </div>
-                                </a>
-                            </td>
-                        </td>
-                    </tr>
-                </table>
-                <hr>
-                <h2 style="text-align: center; color: #7695FF;">Musify Project Team</h2>
-                <div style="display: flex; justify-content: space-around; gap: 30px; margin-bottom: 50px;">
-                    <div style="box-sizing: border-box;">
-                        <div style="box-shadow: 10px 10px 8px #898b90;
-                                    padding: 10px;
-                                    background-color: #7695FF;
-                                    width: 350px;
-                        ">    
-                            <hr style="border-color: black;">
-                            <div style="display: flex; flex-direction: row;">
-                                <img src="../our-playlist/our-photos/haviz.jpg" alt="" width="100px" height="100px" 
-                                    style="border-radius: 30px; margin-top: 15px; object-fit: cover">
-                                <ul style="text-align: left;">
-                                    <li style="margin-bottom: 10px;">Mochammad Haviz R</li>
-                                    <li style="margin-bottom: 10px;">
-                                        <a href="https://www.instagram.com/iamhvzrizkyansyah" target="_blank" 
-                                            style="text-decoration: none; color: black;">
-                                            @iamhvzrizkyansyah
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="box-sizing: border-box;">
-                        <div style="box-shadow: 10px 10px 8px #898b90;
-                                    padding: 10px;
-                                    background-color: #7695FF;
-                                    width: 350px;
-                        ">    
-                            <hr style="border-color: black;">
-                            <div style="display: flex; flex-direction: row;">
-                                <img src="../our-playlist/our-photos/poii.jpg" alt="" width="100px" height="100px" 
-                                    style="border-radius: 30px; margin-top: 15px; object-fit: cover">
-                                <ul style="text-align: left;">
-                                    <li style="margin-bottom: 10px;">Aditya Hendri</li>
-                                    <li style="margin-bottom: 10px;">
-                                        <a href="https://www.instagram.com/_adit_y_ahe_n" target="_blank" 
-                                            style="text-decoration: none; color: black;">
-                                            @_adit_y_ahe_n
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="box-sizing: border-box;">
-                        <div style="box-shadow: 10px 10px 8px #898b90;
-                                    padding: 10px;
-                                    background-color: #7695FF;
-                                    width: 350px;
-                        ">    
-                            <hr style="border-color: black;">
-                            <div style="display: flex; flex-direction: row;">
-                                <img src="../our-playlist/our-photos/geizka.webp" alt="" width="100px" height="100px" 
-                                    style="border-radius: 30px; margin-top: 15px; object-fit: cover">
-                                <ul style="text-align: left;">
-                                    <li style="margin-bottom: 10px;">M. Geizka Yusuf</li>
-                                    <li style="margin-bottom: 10px;">
-                                        <a href="https://www.instagram.com/geizkayus" target="_blank" 
-                                            style="text-decoration: none; color: black;">
-                                            @geizkayus
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div id="playlist-card-container" class="grid-container">
+                    <!-- LIST ALL PLAYLIST -->
                 </div>
-                <div style="display: flex; justify-content: center; align-items: center; gap: 50px;">
-                    <div style="box-sizing: border-box;">
-                        <div style="box-shadow: 10px 10px 8px #898b90;
-                                    padding: 10px;
-                                    background-color: #7695FF;
-                                    width: 350px;
-                        ">    
-                            <hr style="border-color: black;">
-                            <div style="display: flex; flex-direction: row;">
-                                <img src="../our-playlist/our-photos/dila.jpg" alt="" width="100px" height="100px" 
-                                    style="border-radius: 30px; margin-top: 15px; object-fit: cover">
-                                <ul style="text-align: left;">
-                                    <li style="margin-bottom: 10px;">Ardila Eka Nanda</li>
-                                    <li style="margin-bottom: 10px;">
-                                        <a href="https://www.instagram.com/ardilannda" target="_blank" 
-                                            style="text-decoration: none; color: black;">
-                                            @ardilannda
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="box-sizing: border-box;">
-                        <div style="box-shadow: 10px 10px 8px #898b90;
-                                    padding: 10px;
-                                    background-color: #7695FF;
-                                    width: 350px;
-                        ">    
-                            <hr style="border-color: black;">
-                            <div style="display: flex; flex-direction: row;">
-                                <img src="../our-playlist/our-photos/jasmine.jpg" alt="" width="100px" height="100px" 
-                                    style="border-radius: 30px; margin-top: 15px; object-fit: cover">
-                                <ul style="text-align: left;">
-                                    <li style="margin-bottom: 10px;">Jasmine Kania</li>
-                                    <li style="margin-bottom: 10px;">
-                                        <a href="https://www.instagram.com/mineknia" target="_blank" 
-                                            style="text-decoration: none; color: black;">
-                                            @mineknia
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+
+            <h3 class="main-content-title">Musify Project Team</h3>
+            <div id="musify-credit" >
+                <div class="card-container" id="card-container">
+                    <!-- LIST MEMBER MUSIFY -->
                 </div>
-            </div>                  
-            <hr>
-        </div>
+            </div>      
         </div>
         <!-- END MAIN -->
+
+        <!-- START MUSIC PLAYER BAR ON MOBILE -->
+        <div class="music-player-bar">
+            <div class="song-player-container">
+                <div class="song-player-buttons">
+                    <button>
+                        <img src="../assets/rewind-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="../assets/play-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="../assets/fast-forward-icon.png" alt="">
+                    </button>
+                </div>
+
+                <div class="song-info-container">
+                    <img src="../assets/album_covers/blink-182.jpeg" alt="">
+                    <div class="song-info">
+                        <p class="song-title">Judul Lagu</p>
+                        <p>Nama Artist - Nama Album</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MUSIC PLAYER BAR ON MOBILE -->
     </div>
     <!-- END MAIN CONTAINER -->
 </body>
-
+<script src="../javascripts/ourplaylist.js"></script>
 </html>

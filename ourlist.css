@@ -1,0 +1,37 @@
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.card{
+    box-shadow: 10px 10px 8px #898b90;
+    padding: 10px;
+    background-color: #7695FF;
+    width: 350px;
+}
+
+.card-details{
+    display: flex; 
+    flex-direction: row;
+}
+
+.card-details img{
+    width: 100px; 
+    height: 100px;
+    border-radius: 30px; 
+    margin-top: 15px;
+}
+
+ul li{
+    margin-bottom: 10px;
+}
+
+/* START MOBILE RESPONSIVE */
+@media (max-width: 640px){
+
+}
+
+/* END MOBILE RESPONSIVE */

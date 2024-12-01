@@ -92,11 +92,6 @@ const topAlbums = [
     }
 ]
 
-// START playSong function
-const playSong = (songDir) => {
-
-}
-
 // START TOP SONGS
 const songCardContainer = document.getElementById("song-card-container");
 
@@ -137,5 +132,4 @@ topAlbums.forEach((album) => {
     albumLink.appendChild(albumCard);
     albumCardContainer.appendChild(albumLink);
 });
-// END TOP ALBUMS
-
+// END TOP ALBUMS     

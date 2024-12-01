@@ -87,6 +87,12 @@
     <div class="main-container">
         <!-- START NAVBAR -->
         <div class="navbar">
+            <div class="hamburger-menu">
+                <button>
+                    <img src="../assets/hamburger-menu-icon.png" alt="">
+                </button>
+            </div>
+
             <div class="song-player-container">
                 <div class="song-player-buttons">
                     <button>
@@ -127,106 +133,40 @@
         <!-- START MAIN -->
         <div class="main">
             <div>
-                <table>
-                    <tr>
-                        <td>
-                            <a href="../album-pages/favourite-songs.html" style="text-decoration: none;">
-                                <div style="margin: 20px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../assets/favourite-songs.jpg" alt="">
-                                    <div style="display: flex;">
-                                        <p style="margin: 0; font-size: 14px; color: black; margin-right: 5px;">Favourite Songs</p>
-                                        <img width="14px" src="../assets/bluestar_icon.png" alt="" style="object-fit: cover;">
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../album-pages/rock-songs.html" style="text-decoration: none;">
-                                <div style="margin: 20px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../assets/album_covers/rock-songs.png" alt="">
-                                    <div style="display: flex;">
-                                        <p style="margin: 0; font-size: 14px; color: black; margin-right: 5px;">Rock Songs</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../album-pages/pop-songs.html" style="text-decoration: none;">
-                                <div style="margin: 20px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../assets/album_covers/pop_songs.jpeg" alt="">
-                                    <div style="display: flex;">
-                                        <p style="margin: 0; font-size: 14px; color: black; margin-right: 5px;">Pop Songs</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../our-playlist/apoy-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../our-playlist/our-photos/poii.jpg" alt="">
-                                    <div style="display: flex;">
-                                        <p style="margin: 0; font-size: 14px; color: black; margin-right: 5px;">Apoy's Playlist</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../our-playlist/geizka-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../our-playlist/our-photos/geizka.webp" alt="">
-                                    <div style="display: flex;">
-                                        <p style="margin: 0; font-size: 14px; color: black; margin-right: 5px;">Geizka's Playlist</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="../our-playlist/haviz-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../our-playlist/our-photos/haviz.jpg" alt="">
-                                    <div style="display: flex;">
-                                        <p style="margin: 0; font-size: 14px; color: black; margin-right: 5px;">Haviz's Playlist</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../our-playlist/dila-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../our-playlist/our-photos/dila.jpg" alt="">
-                                    <div style="display: flex;">
-                                        <p style="margin: 0; font-size: 14px; color: black; margin-right: 5px;">Ardila's Playlist</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="../our-playlist/mine-playlist.html" style="text-decoration: none;">
-                                <div style="margin: 20px;">
-                                    <img width="200px" height="200px" style="border-radius: 10px; object-fit: cover;" 
-                                        src="../our-playlist/our-photos/mine.jpg" alt="">
-                                    <div style="display: flex;">
-                                        <p style="margin: 0; font-size: 14px; color: black; margin-right: 5px;">Jasmine's Playlist</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
+                <div id="playlist-card-container" class="grid-container">
+                    <!-- LIST ALL PLAYLIST -->
+                </div>
             </div>
         </div>
         <!-- END MAIN -->
+
+        <!-- START MUSIC PLAYER BAR ON MOBILE -->
+        <div class="music-player-bar">
+            <div class="song-player-container">
+                <div class="song-player-buttons">
+                    <button>
+                        <img src="../assets/rewind-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="../assets/play-icon.png" alt="">
+                    </button>
+                    <button>
+                        <img src="../assets/fast-forward-icon.png" alt="">
+                    </button>
+                </div>
+
+                <div class="song-info-container">
+                    <img src="../assets/album_covers/blink-182.jpeg" alt="">
+                    <div class="song-info">
+                        <p class="song-title">Judul Lagu</p>
+                        <p>Nama Artist - Nama Album</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MUSIC PLAYER BAR ON MOBILE -->
     </div>
     <!-- END MAIN CONTAINER -->
 </body>
-
+<script src="../javascripts/index-allplaylist.js"></script>
 </html>

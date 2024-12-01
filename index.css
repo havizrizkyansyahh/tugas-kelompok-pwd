@@ -299,8 +299,6 @@ body {
     z-index: 1;
 }
 
-
-
 /* END REUSABLE STYLE */
 
 
@@ -312,10 +310,6 @@ body {
 
     .main-container{
         margin-left: 0;
-    }
-
-    .main{
-        margin-top: 0;
     }
 
     .navbar{

@@ -86,7 +86,6 @@ const rockSongTabel = document.getElementById("rocksong-tabel");
 
 const tableHead = document.createElement("tr");
 tableHead.innerHTML = `
-    <th></th>
     <th style="text-align: start;">Title</th>
     <th class="song-text-info" style="text-align: start;">Artist</th>
     <th class="song-text-info" style="text-align: start;">Album</th>
@@ -100,11 +99,6 @@ rockSongs.forEach((rockSong, index) => {
     tableRow.style = index % 2 === 0 ? "background-color: #F4F9F9;" : "";
 
     tableRow.innerHTML = `
-        <td>
-            <div class="bluestar-container">
-                <img src="../assets/bluestar_icon.png" alt="">
-            </div>
-        </td>
         <td>
             <div class="title-container">
                 <img src=${rockSong.image} alt="">

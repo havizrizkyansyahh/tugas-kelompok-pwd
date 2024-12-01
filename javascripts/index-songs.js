@@ -69,7 +69,7 @@ const songs = [
         album: "Iluminate",
         image: "../assets/album_covers/mercy.jpg",
         song_dir: "",
-        song_dur: ""
+        song_dur: "3:28"
     },
     {
         title: "Mr. Brightside",
@@ -77,7 +77,7 @@ const songs = [
         album: "Hot Fuss",
         image: "../assets/album_covers/hot_fuss.jpg",
         song_dir: "",
-        song_dur: ""
+        song_dur: "3:43"
     },
     {
         title: "Scar Tissue",
@@ -85,7 +85,7 @@ const songs = [
         album: "Californication",
         image: "../assets/album_covers/californication.jpg",
         song_dir: "",
-        song_dur: ""
+        song_dur: "3:37"
     },
     {
         title: "Shinunoga E-Wa",
@@ -117,7 +117,6 @@ const songTabel = document.getElementById("song-tabel");
 
 const tableHead = document.createElement("tr");
 tableHead.innerHTML = `
-    <th></th>
     <th style="text-align: start;">Title</th>
     <th class="song-text-info" style="text-align: start;">Artist</th>
     <th class="song-text-info" style="text-align: start;">Album</th>
@@ -131,11 +130,6 @@ songs.forEach((song, index) => {
     tableRow.style = index % 2 === 0 ? "background-color: #F4F9F9;" : "";
 
     tableRow.innerHTML = `
-        <td>
-            <div class="bluestar-container">
-                <img src="../assets/bluestar_icon.png" alt="">
-            </div>
-        </td>
         <td>
             <div class="title-container">
                 <img src=${song.image} alt="">

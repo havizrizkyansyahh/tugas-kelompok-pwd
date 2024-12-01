@@ -7,14 +7,21 @@ const playPauseButton = document.getElementById("play-pause-button");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 
-// Fungsi untuk memperbarui navbar dengan data lagu
-const updateNavbar = (index) => {
+// Fungsi untuk memperbarui informasi lagu di navbar dan mobile player
+const updateSongInfo = (index) => {
     const song = songs[index]; // Ambil data lagu berdasarkan indeks
     const songInfoContainer = document.getElementById("song-info-container");
 
+    // Update informasi di navbar
     songInfoContainer.querySelector("img").src = song.image; // Ubah gambar album
     songInfoContainer.querySelector(".song-title").textContent = song.title; // Ubah judul lagu
     songInfoContainer.querySelector(".song-info p:nth-child(2)").textContent = `${song.artist} - ${song.album}`; // Ubah nama artis dan album
+
+    // Update informasi di mobile player
+    const mobileSongInfoContainer = document.querySelector(".music-player-bar .song-info-container");
+    mobileSongInfoContainer.querySelector("img").src = song.image; // Ubah gambar album di mobile
+    mobileSongInfoContainer.querySelector(".song-title").textContent = song.title; // Ubah judul lagu di mobile
+    mobileSongInfoContainer.querySelector(".song-info p:nth-child(2)").textContent = `${song.artist} - ${song.album}`; // Ubah nama artis dan album di mobile
 };
 
 // Fungsi untuk memutar lagu
@@ -33,9 +40,17 @@ const playSong = async (index) => {
         await musicPlayer.play(); // Putar lagu
 
         // Perbarui navbar dengan informasi lagu
-        updateNavbar(currentIndex);
+        //updateNavbar(currentIndex);
 
-        playPauseButton.querySelector("img").src = "../assets/pause-icon.png"; // Ubah ikon
+        // Perbarui informasi lagu di navbar dan mobile player
+        updateSongInfo(currentIndex);
+
+        // Ubah ikon
+        playPauseButton.querySelector("img").src = "../assets/pause-icon.png"; 
+        
+        // Ubah ikon di mobile
+        const mobilePlayPauseButton = document.querySelector(".music-player-bar #play-pause-button");
+        mobilePlayPauseButton.querySelector("img").src = "../assets/pause-icon.png"; 
     } catch (error) {
         console.error("Terjadi kesalahan saat memutar lagu:", error);
     }

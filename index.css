@@ -67,6 +67,24 @@ body {
     z-index: 1;
 }
 
+.hamburger-menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.hamburger-menu button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger-menu button img{
+    width: 40px;
+}
+
 .song-player-container{
     display: flex;
     flex: 1;
@@ -267,6 +285,22 @@ body {
     padding: 0;
 }
 
+.music-player-bar{
+    display: flex; 
+    padding: 0px 30px;
+    background-color: #D4EBF8;
+    height: 50px;
+    margin-left: 245px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+
+
 /* END REUSABLE STYLE */
 
 
@@ -277,11 +311,24 @@ body {
     }
 
     .main-container{
-        margin: 0;
+        margin-left: 0;
+    }
+
+    .main{
+        margin-top: 0;
     }
 
     .navbar{
-        margin: 0;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    .hamburger-menu{
+        display: flex;
+    }
+
+    .song-player-container{
+        display: none;
     }
 
     .play-song-btn{
@@ -293,6 +340,19 @@ body {
     .play-solid-btn img{
         width: 40px;
         height: 40px;
+    }
+
+    .music-player-bar{
+        margin-left: 0;
+        display: flex;
+    }
+
+    .music-player-bar .song-player-container{
+        display: flex;
+    }
+
+    .music-player-bar .song-info-container{
+        width: 100%;
     }
 }
 

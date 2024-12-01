@@ -7,7 +7,7 @@ const songs = [
         song_dir: "../songs/albums/etc/Dewi.mp3",
         song_dur: "4:43"
     },
-    {
+    { 
         title: "Satu Bulan",
         artist: "Bernadya",
         album: "Terlintas",
@@ -121,7 +121,7 @@ tableHead.innerHTML = `
     <th class="song-text-info" style="text-align: start;">Artist</th>
     <th class="song-text-info" style="text-align: start;">Album</th>
     <th style="text-align: start;">Time</th>
-`
+`;
 
 songTabel.appendChild(tableHead);
 
@@ -134,6 +134,9 @@ songs.forEach((song, index) => {
             <div class="title-container">
                 <img src=${song.image} alt="">
                 <p>${song.title}</p>
+                <button class="play-pause-button" data-index=${index}>
+                    <img src="../assets/play-song-white.png" >
+                </button>
             </div>
         </td>
         <td class="song-text-info"><p>${song.artist}</p></td>
@@ -143,4 +146,5 @@ songs.forEach((song, index) => {
 
     songTabel.appendChild(tableRow);
 });
+
 

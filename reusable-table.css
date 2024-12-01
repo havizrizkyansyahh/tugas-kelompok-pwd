@@ -57,12 +57,40 @@ table{
     display: flex; 
     width: 400px; 
     align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.title-container button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 8px;
+}
+
+.title-container button{
+    cursor: pointer;
+}
+
+.title-container button img{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.title-container:hover button img{
+    display: block;
+    filter: brightness(100%);
 }
 
 .title-container img{
     width: 50px; 
     border-radius: 10px; 
     margin-right: 10px;
+}
+
+.title-container:hover img{
+    filter: brightness(75%);
 }
 
 .song-text-info {

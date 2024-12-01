@@ -95,28 +95,28 @@
 
             <div class="song-player-container">
                 <div class="song-player-buttons">
-                    <button>
+                    <button id="prev-button">
                         <img src="../assets/rewind-icon.png" alt="">
                     </button>
-                    <button>
+                    <button id="play-pause-button">
                         <img src="../assets/play-icon.png" alt="">
                     </button>
-                    <button>
+                    <button id="next-button">
                         <img src="../assets/fast-forward-icon.png" alt="">
                     </button>
                 </div>
 
-                <div class="song-info-container">
-                    <img src="../assets/album_covers/blink-182.jpeg" alt="">
+                <div class="song-info-container" id="song-info-container">
+                    <img src="../assets/icons8-music-50.png" alt="">
                     <div class="song-info">
-                        <p class="song-title">Judul Lagu</p>
-                        <p>Nama Artist - Nama Album</p>
+                        <p class="song-title"></p>
+                        <p></p>
                     </div>
                 </div>
                     
                 <div class="song-volume">
                     <img src="../assets/song-volume-icon.png" alt="">
-                    <p>------------</p>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
                 </div>
             </div>
 
@@ -170,4 +170,5 @@
     <!-- END MAIN CONTAINER -->
 </body>
 <script src="../javascripts/index-songs.js"></script>
+<script src="../javascripts/music-player.js"></script>
 </html>
